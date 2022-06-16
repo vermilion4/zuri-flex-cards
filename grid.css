@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+}
+
+main{
+    display: grid;
+    height: 100vh;
+    place-content: center;
+}
+
+.red-box{
+    grid-area: red-box;
+    background-color: red;
+    width: 250px;
+    height: 150px;
+}
+
+.yellow-box{
+    grid-area: yellow-box;
+    background-color: orange;
+    width: 150px;
+}
+
+.green-box{
+    grid-area: green-box;
+    background-color: green;
+    height: 150px;
+}
+
+.blue-box-1{
+    grid-area: blue-1-box;
+    background-color: blue;
+}
+
+.blue-box-2{
+    grid-area: blue-2-box;
+    background-color: blue;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 'red-box red-box red-box red-box yellow-box yellow-box'
+    'green-box green-box green-box blue-1-box blue-1-box blue-1-box'
+    'green-box green-box green-box blue-2-box blue-2-box blue-2-box';
+    gap: 10px;
+}
