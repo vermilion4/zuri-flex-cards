@@ -62,6 +62,13 @@ button {
   background-color: hsl(0, 0%, 95%);
 }
 
+button:hover{
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
 .sedan-btn {
   color: hsl(31, 77%, 52%);
 }
